@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformers | Character Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <p class="eyebrow">TRANSFORMERS</p>
+    <h1>Beyond the Disguise</h1>
+    <p>Every legend has a story. Choose a character and discover theirs.</p>
+  </header>
+
+  <main class="archive">
+
+    <section class="character-menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Choose your character</h2>
+
+      <button type="button" id="text-size-btn" class="action-button">
+  Larger text
+</button>
+
+      <div class="character-list">
+        <button
+          type="button"
+          id="optimus-btn"
+          class="character-button selected"
+          aria-pressed="true"
+        >
+          Optimus Prime
+        </button>
+
+        <button
+          type="button"
+          id="bumblebee-btn"
+          class="character-button"
+          aria-pressed="false"
+        >
+          Bumblebee
+        </button>
+
+        <button
+          type="button"
+          id="megatron-btn"
+          class="character-button"
+          aria-pressed="false"
+        >
+          Megatron
+        </button>
+      </div>
+
+      <p id="search-message" aria-live="polite">
+        3 characters available.
+      </p>
+    </section>
+
+    <section class="character-profile" aria-labelledby="character-name">
+      <div class="character-portrait">
+        <img
+          id="character-image"
+          src="images/optimus.jpg"
+          alt="Optimus Prime"
+        >
+      </div>
+
+      <div class="character-info">
+        <p id="character-faction" class="faction">AUTOBOT</p>
+        <h2 id="character-name">Optimus Prime</h2>
+
+        <p id="character-description">
+          A leader defined by courage and compassion.
+          Optimus Prime stands with the Autobots to protect
+          those who cannot protect themselves.
+        </p>
+
+        <button
+          type="button"
+          id="skills-btn"
+          class="action-button"
+          aria-expanded="false"
+          aria-controls="skills-panel"
+        >
+          View abilities
+        </button>
+
+        <div id="skills-panel" class="skills-panel" hidden>
+          <h3>Abilities</h3>
+          <p id="character-skills">
+            Powerful strength, strategic thinking and leadership.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          id="website-btn"
+          class="website-button"
+        >
+          Explore the official website
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Character Archive  Created by Xiaotian Li</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

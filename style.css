@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #edf4fc;
+  line-height: 1.6;
+  background-color: #08111e;
+  background-image:
+    linear-gradient(rgba(8, 17, 30, 0.78), rgba(8, 17, 30, 0.94)),
+    url("images/cybertron.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.1s, border-color 0.1s, color 0.2s;
+}
+
+button:focus-visible {
+  outline: 3px solid #79dbff;
+  outline-offset: 4px;
+}
+
+.page-header,
+.archive,
+.page-footer {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 64px 0 32px;
+  border-bottom: 1px solid #30465f;
+}
+
+.page-header .eyebrow {
+  color: #79dbff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 18px;
+}
+
+.page-header h1 {
+  color: #f1f7ff;
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.page-header > p:last-child {
+  color: #b3c3d5;
+  font-size: 16px;
+}
+
+.archive {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.character-menu {
+  flex-basis: 240px;
+  flex-shrink: 0;
+}
+
+.character-menu h2 {
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.character-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.character-button {
+  width: 100%;
+  padding: 18px 16px;
+  text-align: left;
+  border: 1px solid #30465f;
+  border-radius: 4px;
+  background-color: #101e30;
+  color: #edf4fc;
+  font-weight: bold;
+}
+
+.character-button:hover {
+  background-color: #19334c;
+  border-color: #79dbff;
+}
+
+.character-button.selected {
+  background-color: #18374e;
+  border-color: #79dbff;
+  border-left: 4px solid #79dbff;
+  color: #ffffff;
+}
+
+#search-message {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #b3c3d5;
+}
+
+.character-profile {
+  display: flex;
+  flex-grow: 1;
+  min-width: 0;
+  background-color: rgba(13, 26, 44, 0.94);
+  border: 1px solid #3b5674;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.character-portrait {
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 24px;
+  background-color: rgba(27, 47, 72, 0.8);
+}
+
+.character-portrait img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+}
+
+.character-info {
+  flex-basis: 55%;
+  min-width: 0;
+  padding: 38px 30px;
+}
+
+.faction {
+  color: #ff8585;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+#character-name {
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+
+#character-description {
+  color: #b3c3d5;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.action-button {
+  padding: 13px 22px;
+  border: 1px solid #79dbff;
+  border-radius: 4px;
+  background-color: #79dbff;
+  color: #08111e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.action-button:hover {
+  background-color: #b0eaff;
+  border-color: #b0eaff;
+}
+
+.skills-panel {
+  margin-top: 20px;
+  padding: 18px;
+  border-left: 3px solid #79dbff;
+  background-color: #182d43;
+  font-size: 14px;
+}
+
+
+.skills-panel h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.website-button {
+  display: block;
+  margin-top: 24px;
+  padding: 4px 0;
+  border: none;
+  background-color: transparent;
+  color: #b3c3d5;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.website-button:hover {
+ color: #79dbff;
+}
+
+.page-footer {
+  padding: 24px 0;
+  border-top: 1px solid #30465f;
+  color: #b3c3d5;
+  font-size: 12px;
+}
